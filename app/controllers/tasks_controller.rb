@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: [:show, :update, :destroy, :complete]
+  before_action :set_task, only: [:show, :update, :destroy, :complete, :uncomplete]
 
   # GET /tasks
   def index
@@ -41,6 +41,10 @@ class TasksController < ApplicationController
   # PATCH /tasks/1/complete
   def complete
     @task.complete
+  end
+
+  def uncomplete
+    @task.uncomplete
   end
 
   private

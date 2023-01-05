@@ -10,13 +10,21 @@ RSpec.describe Task, type: :model do
 
   context "#complete" do
     it "update done to be true" do
-      task = Task.create(description: "Teste")
-
       task.complete
 
       task.reload
 
       expect(task.done).to be true
+    end
+  end
+
+  context "#uncomplete" do
+    it "update done to be false" do
+      task.uncomplete
+
+      task.reload
+
+      expect(task.done).to be false
     end
   end
 end
