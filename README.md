@@ -1,24 +1,29 @@
-# README
+![Logo do projeto](src/assets/logo.svg)
+# ignite-to-do
+Projeto desenvolvido durante os estudos do Ignite da Rocketseat. Serve como backend da aplicação do desafio [1 da trilha de ReactJS](https://github.com/wcardosos/ignite-to-do).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Escolhi desenvolver a aplicação em Rails para treinar o framework backend utilizado na empresa em que trabalho atualmente ([Prevision](https://prevision.com.br)).
 
-Things you may want to cover:
+## Funcionalidades do projeto
+- Criação de tarefas;
+- Conclusão de tarefas;
+- Desfazer conclusão de tarefas;
+- Deleção de tarefas;
 
-* Ruby version
+## Como rodar o projeto
+O comando para rodar o projeto é:
+```bash
+docker-compose up -d
+```
 
-* System dependencies
+A aplicação estará rodando em `http://localhost:3000`.
 
-* Configuration
+## Tecnologias e técnicas utilizadas
+- `Ruby`
+- `Ruby on Rails`
+- `PostgreSQL`
+- `Docker`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Autor
+| [<img src="https://github.com/wcardosos.png?size=128"><br><sub>Wagner Cardoso</sub>](https://github.com/wcardosos)
+| :---: |
